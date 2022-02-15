@@ -1,13 +1,14 @@
-import './App.css'
-import { CalendarForm } from './components/calendar/Calendar';
+import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
+import RcCalendar from "./components/rc/RcCalendar"
+import RcClass from "./components/rc/RcClass"
+import RcUsage from "./components/rc/RcUsage"
 
-function App() {
-    return (
-      <div className='App'>
-        <CalendarForm />
-      </div>
-    )
-}
+// const App = () => <RcUsage />
+const App = () => <>
+  <RcCalendar />
+  <RcClass />
+</>
 
-export default App;
+export default App
